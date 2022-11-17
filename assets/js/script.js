@@ -1,4 +1,4 @@
-var timeLeft = 81;
+var timeLeft = 90;
 var startButton = document.getElementById("starting-button");
 var startingBlock = document.getElementById("starting-block");
 var timeEl = document.getElementById("time-count");
