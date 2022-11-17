@@ -1,0 +1,219 @@
+/* Color Theme Swatches in Hex */
+/* $Logos-Collection-1-hex: #8C8C8B;
+$Logos-Collection-2-hex: #F2EDEB;
+$Logos-Collection-3-hex: #BFBEBD;
+$Logos-Collection-4-hex: #404040;
+$Logos-Collection-5-hex: #0D0D0D; */
+
+/* Color Theme Swatches in RGBA */
+/* $Logos-Collection-1-rgba: rgba(140,139,138, 1);
+$Logos-Collection-2-rgba: rgba(242,236,234, 1);
+$Logos-Collection-3-rgba: rgba(191,189,189, 1);
+$Logos-Collection-4-rgba: rgba(63,63,63, 1);
+$Logos-Collection-5-rgba: rgba(12,12,12, 1); */
+
+/* Color Theme Swatches in HSLA */
+/* $Logos-Collection-1-hsla: hsla(39, 0, 54, 1);
+$Logos-Collection-2-hsla: hsla(16, 22, 93, 1);
+$Logos-Collection-3-hsla: hsla(11, 1, 74, 1);
+$Logos-Collection-4-hsla: hsla(0, 0, 25, 1);
+$Logos-Collection-5-hsla: hsla(0, 0, 5, 1); */
+
+
+
+/* Color Theme Swatches in Hex */
+.Instituto-Território-1-hex { color: #9CD3D9; }
+.Instituto-Território-2-hex { color: #F2B749; }
+.Instituto-Território-3-hex { color: #F2A341; }
+.Instituto-Território-4-hex { color: #D97A43; }
+.Instituto-Território-5-hex { color: #262626; }
+
+/* Color Theme Swatches in RGBA */
+/* .Instituto-Território-1-rgba { color: rgba(156, 210, 216, 1); }
+.Instituto-Território-2-rgba { color: rgba(242, 182, 72, 1); }
+.Instituto-Território-3-rgba { color: rgba(242, 162, 65, 1); }
+.Instituto-Território-4-rgba { color: rgba(216, 122, 67, 1); }
+.Instituto-Território-5-rgba { color: rgba(38, 38, 38, 1); } */
+
+/* Color Theme Swatches in HSLA */
+/* .Instituto-Território-1-hsla { color: hsla(185, 44, 73, 1); }
+.Instituto-Território-2-hsla { color: hsla(39, 86, 61, 1); }
+.Instituto-Território-3-hsla { color: hsla(33, 87, 60, 1); }
+.Instituto-Território-4-hsla { color: hsla(22, 66, 55, 1); }
+.Instituto-Território-5-hsla { color: hsla(0, 0, 15, 1); } */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #262626;
+    color: white;
+}
+
+:root {
+    --blue: #9CD3D9;
+    --text-box-color: #D97A43;
+    --black: #262626;
+    --white: #fff;
+    --right: #F2A341;
+    --wrong: #aaa;
+}
+
+body {
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 68%;
+    font-size: medium;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 28px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.high-score a {
+    background-color: var(--text-box-color);
+    padding: 6px 8px;
+    border-radius: 5px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.high-score a:hover {
+    background-color: var(--blue);
+}
+
+.starting-block,
+h2,
+#question {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 24px;
+    font-size: 28px;
+}
+
+button {
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    padding: 8px;
+    text-align: left;
+    background-color: var(--text-box-color);
+    color: var(--black);
+    margin: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--blue);
+}
+
+#next-button,
+#starting-button,
+#restart-button,
+#clear-score {
+    width: auto;
+}
+
+
+.hidden {
+    display: none;
+}
+
+#verify {
+    color: antiquewhite;
+    border-top: 1px solid antiquewhite ;
+    margin: 20px 0;
+    font-style: italic;
+    opacity: 50%;
+    padding-top: 15px;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.right {
+    background-color: var(--right);
+    border: 1px solid var(--text-box-color);
+}
+
+.wrong {
+    background-color: var(--wrong);
+    border: 1px solid var(--text-box-color);
+}
+
+#score-board {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.initial-input {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.done {
+    font-size: 30px;
+}
+
+#user-score {
+    font-weight: normal;
+}
+
+.initial-input p {
+    padding-top: 17px;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--text-box-color);
+    border-radius: 5px;
+}
+
+.score-block {
+    text-align: center;
+}
+
+.initial {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px 0;
+    background-color: var(--text-box-color);
+    color: var(--black);
+    font-weight: bold;
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+    text-align: left;
+    border-radius: 5px;
+  }
